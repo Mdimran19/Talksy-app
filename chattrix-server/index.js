@@ -13,7 +13,7 @@ app.use(express.json({limit: '10mb'}));
 
 app.use(express.urlencoded({limit: '10mb', extended: true })); 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://talksy-app.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization', 'Cookie']
